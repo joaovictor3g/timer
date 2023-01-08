@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-01: #5965e0;
+
+  --white: #ffffff;
+
+  --background: #f2f3f5;
+}
+
+body {
+  background-color: var(--background);
+  font-family: Rajdhani, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timer .timer-time {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timer-time .group {
+  display: flex;
+  gap: 5px;
+
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.timer-time .group span {
+  background: var(--white);
+  font-size: 9rem;
+  font-weight: 600;
+  width: 150px;
+
+  padding: 1.5rem;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.timer-time span.divider {
+  font-size: 9rem;
+  font-weight: 600;
+}
+
+.timer button {
+  background-color: var(--blue-01);
+  color: var(--white);
+  border: 0;
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 1.25rem;
+  width: 100%;
+
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.timer button:hover {
+  filter: brightness(0.7);
+}
